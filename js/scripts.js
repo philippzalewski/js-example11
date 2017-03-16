@@ -1,9 +1,14 @@
 // plik scripts.js
 
-function rysujChoinkę (a) {
-	for ( var p = 0; p<a; p++ ) 
-		var star = ''; {
-			for ( var n; star += '*' ; n*2-1 )
-				console.log(star);
+var withButtonClass = document.getElementsByClassName('button');
+// console.log(withButtonClass);
+
+var q = withButtonClass.length;
+console.log(withButtonClass.length);
+
+for ( var a = 0; q != a; a++) {
+
+	function textButton () {
+	console.log(withButtonClass.innerText);
 	}
 }
