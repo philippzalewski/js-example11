@@ -1,14 +1,15 @@
 // plik scripts.js
 
-var withButtonClass = document.getElementsByClassName('button');
-// console.log(withButtonClass);
+var buttonElem = document.getElementById('addElem'),
+    ulElem = document.getElementById('list');
 
-var q = withButtonClass.length;
-console.log(withButtonClass.length);
+buttonElem.addEventListener('click', function(e) {
+	ulElem.innerHTML += "<li>item</li>"
+	
+	var q = ulElem.length;
+	console.log(q);
+	
+	var itemsByTagName = document.getElementsByTagName('li');
+	itemsByTagName.innerText += [q];
 
-for ( var a = 0; q != a; a++) {
-
-	function textButton () {
-	console.log(withButtonClass.innerText);
-	}
-}
+});
